@@ -178,8 +178,8 @@
     /* .carousel-caption has z-index 10 */
   }
   .show-neighbors .carousel-inner {
-    width: 180%;
-    left: -40%;
+    width: 170%;
+    left: -35%;
     /* play here to see if the image can be  */
   }
   .show-neighbors .carousel-item-next:not(.carousel-item-left),
