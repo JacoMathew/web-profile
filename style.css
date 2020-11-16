@@ -17,6 +17,11 @@
     font-size: 1.2rem;
 }
 
+.headerNavBarFontStyle:hover {
+  color: var(--headerTxtColour) !important;
+  background-color: var(--headerfocusColour);
+} 
+
 @media (min-width: 500px){
   .headerNavBarFontStyle{
       font-size: 1.5rem;
