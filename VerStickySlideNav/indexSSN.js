@@ -129,6 +129,6 @@ function showPDFOnClick(toggler, show){
 };
 
 function toggleVersion(){
-	location.href="../index.html";
+	location.href="https://jacomathew.github.io/web-profile/index.html";
 	// alert("Hello");
 };
