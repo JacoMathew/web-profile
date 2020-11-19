@@ -77,5 +77,10 @@ function showPDFOnClick(toggler, show){
   }
 };
 
+function toggleVersion(){
+	location.href="../VerStickySlideNav/indexSSN.html";
+	// alert("Hello");
+};
+
 // LAST:  Code to hide the Navbar after few seconds on complete load 
 startTimerId();

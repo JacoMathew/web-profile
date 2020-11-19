@@ -63,19 +63,19 @@
 /* Self Hiding Navbar CSS END */
 
 .sectionHeadsLight{
-    color: var(--headerBGColour);
-    background-color: var(--sectionColour1);
-    padding-left: var(--sectionPadding);
-    padding-right: var(--sectionPadding);
-    padding-bottom: 3rem;
+  color: var(--headerBGColour);
+  background-color: var(--sectionColour1);
 }
 
 .sectionHeadsDark{
-    color: var(--headerBGColour);
-    background-color: var(--sectionColour2);
-    padding-left: var(--sectionPadding);
-    padding-right: var(--sectionPadding);
-    padding-bottom: 3rem;
+  color: var(--headerBGColour);
+  background-color: var(--sectionColour2);
+}
+
+.sectionPadding {
+  padding-left: var(--sectionPadding);
+  padding-right: var(--sectionPadding);
+  padding-bottom: 3rem;
 }
 
 .sectionHeadsSizing{
@@ -281,4 +281,39 @@
 
 .fa-search:hover{
   cursor: pointer;
+}
+
+/* Version Control Section */
+.versions {
+  background-color: var(--headerBGColour);
+  color: var(--headerTxtColour);
+}
+
+.btnVersion {
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  width: 100%;
+  font-weight: 900;
+}
+
+.btnVersions{
+  background-color: var(--headerBGColour);
+  color: var(--headerTxtColour);  
+  cursor: pointer;
+}
+
+.btnVersions:hover{
+  background-color: var(--headerfocusColour);
+  color: var(--headerTxtFocusColour);
+  border-style: ridge;
+}
+
+.btnCurrentView{
+  background-color: var(--headerfocusColour);
+  color: var(--headerTxtFocusColour);
+  cursor: default !important;
 }

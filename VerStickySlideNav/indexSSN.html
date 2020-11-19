@@ -12,7 +12,7 @@
 <body>
     <!-- Hero -->
   <section class="et-hero-tabs">
-    <section class="sectionHeadsLight sectionHeadsSizing" id="section-home">
+    <section class="sectionHeadsLight sectionPadding sectionHeadsSizing imgSummary" id="section-home">
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
               <div class="col-md-6">
@@ -32,13 +32,36 @@
     </section>
     
     <!-- A Card with Summary and a flip Photo for small screens -->
+    <section class="sectionHeadsLight sectionPadding sectionHeadsSizing imgSummaryCard" id="section-home">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+          <div class="flip-card ">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="..\Assets\JacoProfile.png"
+                  alt="Profile Photo" class="responsiveProfileImage mt-1">
+              </div>
+              
+              <div class="flip-card-back d-flex align-items-center">
+                <h4 class="summary">
+                  Dynamic, adaptable and motivated Magna Cum Laude MBA graduate with 9 years of managerial and business analysis experience with a passion 
+      for Web / Software application development and Data Analytics.
+                </h4>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    
+    
 
     <div class="et-hero-tabs-container">
         <header class="headerBG" id="navbar"> 
             <div class="row pl-2">
                 <div class="col-12 my-auto" >
                     <nav class="navbar navbar-expand-lg navbar-dark">
-                        <a class="navbar-brand mr-auto font-weight-bold headerNavBarFontStyle">Jaco MATHEW THAMPI</a>
+                      <a class="navbar-brand mr-auto font-weight-bold headerNavBarFontStyle">Jaco MATHEW THAMPI</a>
                         <button class="navbar-toggler ml-auto navbarButton" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span>
                             <i class="fa fa-bars navbarIconColour"></i>
@@ -80,7 +103,7 @@
 
 
   
-  <section class="sectionHeadsDark sectionHeadsSizing" id="section-experience">
+  <section class="sectionHeadsDark sectionPadding sectionHeadsSizing" id="section-experience">
     <div class="container-fluid">
       <h1>Experience</h1>
       <div class="row pt-5">
@@ -133,7 +156,7 @@
       </div>  
     </div>
 </section>
-<section class="sectionHeadsLight sectionHeadsSizing" id="section-education">
+<section class="sectionHeadsLight sectionPadding sectionHeadsSizing" id="section-education">
     <div class="container-fluid">
       <h1>Education</h1>
 
@@ -306,7 +329,7 @@
     </div>
 </section>
 
-<section class="sectionHeadsDark sectionHeadsSizing" id="section-skill">
+<section class="sectionHeadsDark sectionPadding sectionHeadsSizing" id="section-skill">
   <div class="container-fluid">
       <h1>Skills</h1>
       <div class="row pt-5">
@@ -427,7 +450,7 @@
   </div>
 </section>
 
-<section class="sectionHeadsLight sectionHeadsSizing" id="section-achievement">
+<section class="sectionHeadsLight sectionPadding sectionHeadsSizing" id="section-achievement">
   <div class="container-fluid">
       <h1>Achievements</h1>
       <div class="row pt-3">
@@ -542,7 +565,7 @@
       </div>
     </div>
   </section> 
-<footer class="sectionHeadsDark footer" id="section-contact">
+<footer class="sectionHeadsDark sectionPadding footer" id="section-contact">
   <div class="container-fluid">   
     <div class="row pt-3">
       <div class="col-md-6">
@@ -591,45 +614,36 @@
       <i class="fas fa-laugh-wink"></i>
       : Jaco Mathew
     </div>
-  </div>        
+  </div> 
+  
 </footer>
 
-<!--   
-  <main class="et-main">
-    <section class="et-slide" id="tab-es6">
-        <div class="row pt-3  justify-content-center" id="certificates" style="display: none;" >
-        
-        </div>
-    </section>
-    
-    <section class="et-slide" id="tab-flexbox">
-      <h1>Flexbox</h1>
-      <h3>something about flexbox</h3>
-    </section>
-    <section class="et-slide" id="tab-react">
-      <h1>React</h1>
-      <h3>something about react</h3>
-    </section>
-    <section class="et-slide" id="tab-angular">
-      <h1>Angular</h1>
-      <h3>something about angular</h3>
-    </section>
-    <section class="et-slide" id="tab-other">
-      <h1>Other</h1>
-      <h3>something about other</h3>
-    </section>
-  </main>
-     -->
+<section class="sectionHeadsDark"> 
+  <div class="container-fluid">
+    <div class="row versionControl">
+      <div class="col-12 col-md-6 text-center versions">
+        <button 
+        type="button" onclick="toggleVersion()"
+         class="btnVersion btnVersions">
+        Autohide Navbar Version</button>
+      </div>
+      
+      <div class="col-12 col-md-6 text-center versions" >
+        <button 
+        type="button" class="btnVersion btnCurrentView">
+        Sticky Slide Navbar Version</button>
+      </div>
+    </div>
+  </div> 
+</section>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.228/pdf.min.js"></script>
-    <!--Since the js file is in the end of HTML page, there is no need to use -->
-    <!-- $(document).ready(function(){}); method -->
-    <Script src="indexSSN.js"></Script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.228/pdf.min.js"></script>
+  <!--Since the js file is in the end of HTML page, there is no need to use -->
+  <!-- $(document).ready(function(){}); method -->
+  <Script src="indexSSN.js"></Script>
 </body>
 </html>  
   

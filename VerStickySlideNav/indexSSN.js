@@ -127,3 +127,8 @@ function showPDFOnClick(toggler, show){
         }, 100);
     }
 };
+
+function toggleVersion(){
+	location.href="../index.html";
+	// alert("Hello");
+};
