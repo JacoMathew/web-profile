@@ -78,7 +78,7 @@ function showPDFOnClick(toggler, show){
 };
 
 function toggleVersion(){
-	location.href="https://jacomathew.github.io/web-profile/VerStickySlideNav/indexSSN.html";
+	location.href="https://bit.ly/wpSSN";
 	// alert("Hello");
 };
 
