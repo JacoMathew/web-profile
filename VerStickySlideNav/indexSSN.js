@@ -1,5 +1,7 @@
 // $('#certificates').load("new.html");
 
+// /*
+
 class StickyNavigation {
 	
 	constructor() {
@@ -14,11 +16,11 @@ class StickyNavigation {
 		$(window).resize(() => { this.onResize(); });
 	}
 	
-	onTabClick(event, element) {
-		event.preventDefault();
-		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
-		$('html, body').animate({ scrollTop: scrollTop }, 600);
-	}
+	// onTabClick(event, element) {
+	// 	event.preventDefault();
+	// 	let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+	// 	$('html, body').animate({ scrollTop: scrollTop }, 600);
+	// }
 	
 	onScroll() {
 		this.checkTabContainerPosition();
@@ -60,7 +62,8 @@ class StickyNavigation {
 			this.setSliderCss();
 		}
 	}
-	
+
+
 	setSliderCss() {
 		let width = 0;
 		let left = 0;
@@ -77,7 +80,9 @@ class StickyNavigation {
 new StickyNavigation();
 
 
-// ------------
+
+// */
+
 
 // Hide Navbar of click of each element
 $(".navbar a").click(function (event) {
@@ -90,7 +95,12 @@ function collapseNavbarToggler() {
     if (toggle) {
       $(".navbar-collapse").collapse('hide');
     }   
-}
+};
+
+function navbarHamburgerMenuClicked(){
+
+location.href = "#section-experience";
+};
 
 
 $("#certificate").click(function (event) {

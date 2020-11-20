@@ -8,6 +8,12 @@
   --sectionPadding : 6vw;
 }
 
+* { 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box; 
+}
+
 body {
   font-family: "Century Gothic", 'Lato', sans-serif;
 }
@@ -15,6 +21,9 @@ body {
 a {
   text-decoration: none;
 }
+
+
+/* Sticky Slide Navbar Start */
 
 .et-hero-tabs,
 .et-slide {
@@ -119,25 +128,40 @@ a {
     font-size: 1rem;
   }
 }
-/*# sourceMappingURL=styleSSN.css.map */
-
-/*------------------ */
-
+/*Sticky Slide Navbar End */
 
 /* Style the navbar */
 #navbar {
-  overflow: hidden;
+  /* overflow: ; */
   width: 100%;
+  height: 80px;
+}
+
+@media (min-width: 970px) {
+  #navbar {
+    overflow: hidden;
+    width: 100%;  
+  }
+}
+
+@media (max-width: 970px) {
+  #navbarNav .nav-link {
+    width: 100%;
+    text-align: right;
+    }
+
 }
 
 /* Navbar links */
 #navbar a {
-  float: left;
+  float: right;
   display: block;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
   color: var(--headerTxtColour);
+  /* width: 100vw; */
+  background-color: var(--headerBGColour);
 }
 
 #navbar a:hover {
@@ -146,9 +170,11 @@ a {
 }
 
 
+
+
 .headerBG {
   background-color: var(--headerBGColour);
-  z-index: 1;
+  height: 100vh;
 }
 
 .headerNavBarFontStyle{
@@ -183,6 +209,7 @@ background-color: var(--headerfocusColour);
 
 .navbarButton{
   border-color: var(--headerTxtColour) !important;
+  background-color: transparent;
 } 
 
 .navbarIconColour{
@@ -230,24 +257,25 @@ padding-top: 1.5rem;
 
 
 .responsiveProfileImage {
-width: 350px;
-max-width: 90%;
-height: auto;
-min-height: 50vh;
-border-radius: 30%;
-margin-bottom: 4rem;
-margin-top: 1rem;
-margin-left: auto;
-margin-right: auto;
-display: block;
-background-color: white;
+  width: 350px;
+  max-width: 90%;
+  height: auto;
+  min-height: 50vh;
+  max-height: 80vh;
+  border-radius: 30%;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: white;
 }
 
 .summary{
-line-height: 1.6;
-font-weight: bold;
-text-align:justify;  
-text-justify:inter-word;
+  line-height: 1.6;
+  font-weight: bold;
+  text-align:justify;  
+  text-justify:inter-word;
 
 }
 

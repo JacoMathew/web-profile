@@ -7,6 +7,13 @@
     --sectionColour2 : #e4e4f8;
     --sectionPadding : 6vw;
 }
+
+* { 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box; 
+}
+
 .headerBG {
     background-color: var(--headerBGColour);
     z-index: 1;
@@ -47,7 +54,7 @@
   
   /* Style the navbar links */
 #navbar a {
-    float: left;
+    float: right;
     display: block;
     text-align: center;
     padding: 1rem;
