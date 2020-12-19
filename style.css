@@ -12,6 +12,15 @@
   margin:0; 
   padding:0; 
   box-sizing:border-box; 
+  font-family: 'Varela Round', sans-serif;
+}
+
+.summary{
+  font-family:  'Gochi Hand', cursive;
+}
+
+div>h1{
+  font-family: 'Righteous', cursive;
 }
 
 .headerBG {
@@ -277,12 +286,12 @@
 
 }
 
-.gplus-ic:hover,
-.li-ic:hover{
+.contact-ic:hover{
   color: var(--headerTxtFocusColour) !important;
   border-width: 1px;
   border-color: var(--headerTxtFocusColour);
   font-size: 1.1rem;
+  scale: 1.2;
 }
 /* Image Carousel CSS END  */
 

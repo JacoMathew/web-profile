@@ -99,7 +99,7 @@ function collapseNavbarToggler() {
 
 function navbarHamburgerMenuClicked(){
 
-location.href = "#section-experience";
+location.href = "#navbar";
 };
 
 
